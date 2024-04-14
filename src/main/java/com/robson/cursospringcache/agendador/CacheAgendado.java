@@ -12,9 +12,9 @@ import java.util.concurrent.TimeUnit;
 @Log4j2
 public class CacheAgendado {
 
-    @Scheduled(fixedDelay = 30, timeUnit = TimeUnit.SECONDS)
-    @CacheEvict("empresas")
-    public void limparCacheEmpresas(){
-        log.info("Executado: " + LocalDateTime.now());
-    }
+//    @Scheduled(fixedDelay = 30, timeUnit = TimeUnit.SECONDS)
+//    @CacheEvict("empresas")
+//    public void limparCacheEmpresas(){
+//        log.info("Executado: " + LocalDateTime.now());
+//    }
 }

@@ -13,8 +13,13 @@ public class EmpresaService {
     @Autowired
     private EmpresaRepository empresaRepository;
 
+    //FindAllComCache
     @Cacheable("empresas")
-    public List<Empresa> findAll() {
+    public List<Empresa> findAllComCache() {
+        return (List<Empresa>) empresaRepository.findAll();
+    }
+
+    public List<Empresa> findAll(){
         return (List<Empresa>) empresaRepository.findAll();
     }
 }
